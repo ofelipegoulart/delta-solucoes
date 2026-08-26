@@ -12,7 +12,7 @@ export default function ClientesSegmentos() {
         <h2 className="text-base sm:text-lg font-semibold text-neutral-700 mb-4">
           Setores que já passaram pela nossa produção
         </h2>
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-6">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-6">
           Em vez de uma lista enorme de nomes, preferimos mostrar a
           diversidade de quem já trabalhou com a gente — isso diz mais sobre
           nossa experiência do que uma parede de logos.

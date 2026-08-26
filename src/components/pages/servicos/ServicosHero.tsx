@@ -13,7 +13,7 @@ export default function ServicosHero() {
         <p className="text-[10px] sm:text-xs text-neutral-400 mb-1">
           Subtítulo
         </p>
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed max-w-2xl">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed max-w-2xl">
           Do promocional à embalagem, do rótulo à comunicação visual. Se é
           impresso e representa a sua marca, a gente desenvolve, produz e
           entrega — inclusive a criação da arte, se você ainda não tiver.

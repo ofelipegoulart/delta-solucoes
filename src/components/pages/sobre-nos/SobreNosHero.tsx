@@ -19,7 +19,7 @@ export default function SobreNosHero() {
             <p className="text-[10px] sm:text-xs text-neutral-400 mb-1">
               Subtítulo
             </p>
-            <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed">
+            <p className="text-sm md:text-base text-neutral-500 leading-relaxed">
               Chega de juntar três empresas diferentes para fechar um pedido.
               Na Delta, a mesma equipe acompanha o material desde a ideia no
               papel até a caixa chegar na sua porta.

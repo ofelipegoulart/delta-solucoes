@@ -22,7 +22,7 @@ export default function Button({
   return (
     <Link
       href={href}
-      className={`flex items-center justify-center text-center text-xs sm:text-sm font-medium rounded px-3 sm:px-5 py-3 border-2 transition-colors ${variants[variant]} ${className}`}
+      className={`flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-3 sm:px-5 py-3 border-2 transition-colors ${variants[variant]} ${className}`}
     >
       {label}
     </Link>

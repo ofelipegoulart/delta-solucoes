@@ -17,7 +17,7 @@ export default function HomeHero() {
             <h1 className="text-[32px] sm:text-[42px] md:text-[54px] font-semibold leading-[1.04] tracking-[-0.028em] text-balance mb-5">
               A solução perfeita para você
             </h1>
-            <p className="text-[15px] md:text-[17px] leading-[1.6] opacity-[0.82] max-w-[470px] mx-auto md:mx-0 mb-8">
+            <p className="text-[16px] md:text-[18px] leading-[1.6] opacity-[0.82] max-w-[470px] mx-auto md:mx-0 mb-8">
               Qualidade de acabamento e preço justo em materiais que
               revolucionam o mercado — da embalagem ao rótulo, do promocional
               ao impresso sob medida.
@@ -26,13 +26,13 @@ export default function HomeHero() {
             <div className="flex flex-row gap-3">
               <Link
                 href="/contato"
-                className="flex-1 flex items-center justify-center text-center text-xs sm:text-sm font-medium rounded px-3 sm:px-5 py-3 bg-laranja text-white transition-colors hover:bg-white hover:text-marinho"
+                className="flex-1 flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-3 sm:px-5 py-3 bg-laranja text-white transition-colors hover:bg-white hover:text-marinho"
               >
                 Solicitar Orçamento
               </Link>
               <Link
                 href="/sobre-nos"
-                className="flex-1 flex items-center justify-center text-center text-xs sm:text-sm font-medium rounded px-3 sm:px-5 py-3 border-2 border-off-white/50 text-off-white transition-colors hover:bg-off-white hover:text-marinho"
+                className="flex-1 flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-3 sm:px-5 py-3 border-2 border-off-white/50 text-off-white transition-colors hover:bg-off-white hover:text-marinho"
               >
                 Conheça Nossa Estrutura
               </Link>

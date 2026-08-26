@@ -14,12 +14,12 @@ export default function ServicosFazemosTudo() {
             <h2 className="text-base sm:text-lg font-semibold text-neutral-700 mb-3">
               Não achou o que você precisa aí em cima?
             </h2>
-            <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-3">
+            <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-3">
               Provavelmente a gente faz mesmo assim. Os blocos acima são os
               tipos de material que mais saem daqui, não a lista completa do
               que conseguimos produzir.
             </p>
-            <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed">
+            <p className="text-sm md:text-base text-neutral-500 leading-relaxed">
               E se o seu material ainda não existe — se você tem a ideia mas
               não tem a arte —, a gente desenvolve junto com você: criação,
               faca de corte, escolha de material e acabamento. Do rascunho

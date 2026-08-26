@@ -29,14 +29,14 @@ export default function SobreNosDiferencial() {
           Experiência e inovação no mesmo projeto
         </h2>
 
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-3">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-3">
           Tirar uma ideia do papel costuma ser a parte mais cansativa do
           processo. Um fornecedor cuida do design, outro faz a faca de corte,
           um terceiro imprime, e no meio de tudo isso o prazo escorre. Aqui
           essas etapas acontecem debaixo do mesmo teto, com uma equipe só
           respondendo por elas.
         </p>
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-6">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-6">
           Entramos no projeto cedo, antes de qualquer máquina ligar. Ajudamos
           a desenhar a faca, revisamos o arquivo linha por linha e preparamos
           o material para que a impressão saia certa já na primeira

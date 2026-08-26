@@ -73,7 +73,7 @@ export default function HomeLogos() {
     <section className="w-full bg-off-white border-b border-borda">
       <div className="max-w-310 mx-auto px-6 md:px-12 py-6 md:py-7">
         <div className="flex flex-col items-center md:flex-row md:items-center gap-4 md:gap-9">
-          <p className="text-[11px] font-medium tracking-[0.16em] uppercase opacity-65 shrink-0 text-tinta text-center md:text-left whitespace-nowrap">
+          <p className="text-xs font-medium tracking-[0.16em] uppercase opacity-65 shrink-0 text-tinta text-center md:text-left whitespace-nowrap">
             Empresas que confiam na Delta
           </p>
 

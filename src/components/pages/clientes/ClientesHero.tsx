@@ -13,7 +13,7 @@ export default function ClientesHero() {
         <p className="text-[10px] sm:text-xs text-neutral-400 mb-1">
           Subtítulo
         </p>
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed max-w-xl">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed max-w-xl">
           Sem enrolação: aqui embaixo tem projeto de verdade, cliente de
           verdade e resultado que a gente pode mostrar sem medo.
         </p>

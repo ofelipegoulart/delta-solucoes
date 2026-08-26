@@ -43,7 +43,7 @@ export default function ServicosCategorias() {
         <h2 className="text-base sm:text-lg font-semibold text-neutral-700 mb-2">
           O que a gente produz
         </h2>
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-8 max-w-2xl">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-8 max-w-2xl">
           Organizamos por tipo de material, não por lista de produto —
           porque quase sempre o que você precisa é uma combinação de mais de
           um.
@@ -64,7 +64,7 @@ export default function ServicosCategorias() {
                   </h3>
                 </div>
               </div>
-              <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-4">
+              <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-4">
                 {categoria.text}
               </p>
               <div className="grid grid-cols-3 gap-2 mb-4">

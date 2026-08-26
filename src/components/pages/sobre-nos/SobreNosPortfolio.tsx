@@ -24,7 +24,7 @@ export default function SobreNosPortfolio() {
           Alguns trabalhos que gostamos de mostrar
         </h2>
 
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-6">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-6">
           Embalagem não é só o que protege o produto. É uma extensão da
           identidade da sua marca e a primeira coisa que o cliente vê, antes
           mesmo de chegar no que está dentro. Cada detalhe conta: do design

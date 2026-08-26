@@ -14,14 +14,14 @@ export default function SobreNosParqueGrafico() {
           Máquina, material e repertório para qualquer pedido
         </h2>
 
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-3">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-3">
           Trabalhamos com todos os tipos de impressão e substratos
           disponíveis no mercado, além dos acabamentos que dão o toque final
           na embalagem. Se o seu produto pede couchê com verniz localizado,
           se pede kraft cru, se pede oito cores em flexo: a resposta costuma
           ser a mesma. Conseguimos fazer.
         </p>
-        <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed mb-6">
+        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-6">
           E quando o material não é o mais indicado para o que você quer,
           também falamos. Vale mais avisar antes do que entregar uma
           embalagem que não sustenta o produto.

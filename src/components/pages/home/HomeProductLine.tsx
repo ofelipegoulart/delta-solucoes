@@ -75,15 +75,15 @@ export default function HomeProductLine() {
                 )}
               </div>
               <div className="flex flex-col flex-1 gap-3.5 px-6 pt-[22px] pb-6">
-                <h3 className="text-sm font-semibold text-marinho">
+                <h3 className="text-base sm:text-lg font-semibold text-marinho">
                   {product.title}
                 </h3>
-                <ul className="text-xs text-grafite/70 space-y-1 list-disc list-outside pl-4">
+                <ul className="text-sm sm:text-base text-grafite/70 space-y-1 list-disc list-outside pl-4">
                   {product.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-                <div className="text-xs font-medium border-2 border-laranja text-laranja px-3 py-2 text-center w-full mt-auto transition-colors hover:bg-laranja hover:text-white">
+                <div className="text-sm sm:text-base font-medium border-2 border-laranja text-laranja px-3 py-2 text-center w-full mt-auto transition-colors hover:bg-laranja hover:text-white">
                   {product.cta}
                 </div>
               </div>
