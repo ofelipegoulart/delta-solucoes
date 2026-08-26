@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f5f0;
+  --foreground: #172a3a;
+
+  --color-laranja: #f26522;
+  --color-laranja-dark: #c94f18;
+  --color-marinho: #172a3a;
+  --color-marinho-sombra: #132330;
+  --color-grafite: #293238;
+  --color-off-white: #f7f5f0;
+  --color-cinza-claro: #dde2e5;
+
+  --color-branco: #ffffff;
+  --color-tinta: #293238;
+  --color-borda: #dde2e5;
+  --color-borda-warm: #d6d2c8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-laranja: var(--color-laranja);
+  --color-laranja-dark: var(--color-laranja-dark);
+  --color-marinho: var(--color-marinho);
+  --color-marinho-sombra: var(--color-marinho-sombra);
+  --color-grafite: var(--color-grafite);
+  --color-off-white: var(--color-off-white);
+  --color-cinza-claro: var(--color-cinza-claro);
+  --color-branco: var(--color-branco);
+  --color-tinta: var(--color-tinta);
+  --color-borda: var(--color-borda);
+  --color-borda-warm: var(--color-borda-warm);
+  --font-sans: var(--font-roboto);
+  --font-heading: var(--font-archivo);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.wf-box {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #e5e7eb 0,
+    #e5e7eb 1px,
+    transparent 1px,
+    transparent 8px
+  );
+  border: 1.5px dashed #9ca3af;
+}
+
+.wf-img {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #d1d5db 0,
+    #d1d5db 1px,
+    #f3f4f6 1px,
+    #f3f4f6 10px
+  );
+  border: 1.5px dashed #9ca3af;
+}
+
+.wf-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.04em;
+}
