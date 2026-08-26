@@ -7,6 +7,7 @@ export default function HomeFinalCta() {
       style={{
         clipPath: "polygon(0 0, 100% 96px, 100% 100%, 0 100%)",
         marginTop: -96,
+        marginBottom: -2,
       }}
     >
       <div

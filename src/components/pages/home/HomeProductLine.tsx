@@ -78,7 +78,7 @@ export default function HomeProductLine() {
                 <h3 className="text-sm font-semibold text-marinho">
                   {product.title}
                 </h3>
-                <ul className="text-xs text-grafite/70 space-y-1 list-disc list-inside">
+                <ul className="text-xs text-grafite/70 space-y-1 list-disc list-outside pl-4">
                   {product.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
