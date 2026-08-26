@@ -90,7 +90,7 @@ export default function Footer() {
               height={144}
               className="h-12 w-auto object-contain shrink-0"
             />
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-0.5">
               <span className="font-semibold text-white text-sm tracking-tight">
                 Delta Soluções
               </span>
