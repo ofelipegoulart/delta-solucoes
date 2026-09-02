@@ -24,7 +24,7 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
 
   return (
     <>
-      <header className="sticky top-0 z-40 bg-off-white-morno border-t-4 border-t-laranja border-b border-b-borda-morna">
+      <header className="sticky top-0 z-40 bg-branco border-t-4 border-t-laranja border-b border-b-borda-morna">
         <div className="max-w-310 mx-auto h-20 flex items-center justify-between px-6 md:px-12">
           <Link href="/" className="flex gap-3 items-center hover:opacity-85 transition-opacity">
             <Image
@@ -111,7 +111,7 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
         onClick={() => setDrawerOpen(false)}
       />
       <nav
-        className={`md:hidden fixed top-0 right-0 z-40 h-full w-64 max-w-[80%] bg-off-white-morno border-l border-borda-morna shadow-xl transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 z-40 h-full w-64 max-w-[80%] bg-branco border-l border-borda-morna shadow-xl transform transition-transform duration-300 ease-in-out ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
