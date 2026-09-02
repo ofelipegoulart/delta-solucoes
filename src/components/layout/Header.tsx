@@ -38,13 +38,13 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
             <span className="flex flex-col" style={{ lineHeight: 1.15 }}>
               <span
                 className="font-bold text-marinho"
-                style={{ fontFamily: "var(--font-heading)", fontSize: 17, letterSpacing: "-0.01em" }}
+                style={{ fontFamily: "var(--font-heading)", fontSize: 20, letterSpacing: "-0.01em" }}
               >
                 Delta
               </span>
               <span
                 className="font-medium uppercase text-grafite"
-                style={{ fontFamily: "var(--font-sans)", fontSize: 9.5, letterSpacing: "0.14em" }}
+                style={{ fontFamily: "var(--font-sans)", fontSize: 11, letterSpacing: "0.14em" }}
               >
                 Soluções em Impressão
               </span>
@@ -131,13 +131,13 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
               <span className="flex flex-col" style={{ lineHeight: 1.15 }}>
                 <span
                   className="font-bold text-marinho"
-                  style={{ fontFamily: "var(--font-heading)", fontSize: 17, letterSpacing: "-0.01em" }}
+                  style={{ fontFamily: "var(--font-heading)", fontSize: 20, letterSpacing: "-0.01em" }}
                 >
                   Delta
                 </span>
                 <span
                   className="font-medium uppercase text-grafite"
-                  style={{ fontFamily: "var(--font-sans)", fontSize: 9.5, letterSpacing: "0.14em" }}
+                  style={{ fontFamily: "var(--font-sans)", fontSize: 11, letterSpacing: "0.14em" }}
                 >
                   Soluções em Impressão
                 </span>
