@@ -121,10 +121,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2 opacity-80">
                 <PinIcon />
-                <span>
-                  Rua Dr. João Batista de Bernardes Lima, 491 – Pt 1,
-                  Chácara Inglesa, São Paulo/SP, CEP 05141-000
-                </span>
+                <span>São Paulo - SP</span>
               </div>
             </div>
             <div className="flex gap-2 mt-4">
@@ -211,10 +208,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2 opacity-80">
                 <PinIcon />
-                <span>
-                  Rua Dr. João Batista de Bernardes Lima, 491 – Pt 1,
-                  Chácara Inglesa, São Paulo/SP, CEP 05141-000
-                </span>
+                <span>São Paulo - SP</span>
               </div>
             </div>
           </div>
