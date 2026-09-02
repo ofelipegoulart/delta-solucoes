@@ -39,19 +39,32 @@ export default function HomeHero() {
             </div>
           </div>
 
-          <div className="md:self-end flex justify-center md:justify-end pt-8 pb-16 md:pt-0 md:pb-0">
-            <Image
-              src="/images/products/sacola-visionari.png"
-              alt="Sacola promocional personalizada Visionari, produzida pela Delta Soluções"
-              width={1179}
-              height={1471}
-              priority
-              className="w-auto h-auto max-w-[200px] sm:max-w-[260px] md:max-w-none"
-              style={{
-                maxHeight: 500,
-                filter: "drop-shadow(0 30px 34px rgba(74,26,6,.45))",
-              }}
-            />
+          <div className="md:self-end flex justify-center pt-8 pb-16 md:pt-0 md:pb-0">
+            <div className="relative">
+              <Image
+                src="/images/products/caixa-acetato.png"
+                alt="Caixa de acetato personalizada, produzida pela Delta Soluções"
+                width={640}
+                height={852}
+                className="absolute z-0 top-1/2 -translate-y-1/2 right-[-55px] sm:right-[-80px] md:right-[-120px] w-auto h-auto max-w-[200px] sm:max-w-[250px] md:max-w-[330px]"
+                style={{
+                  maxHeight: 450,
+                  filter: "drop-shadow(0 20px 24px rgba(74,26,6,.4))",
+                }}
+              />
+              <Image
+                src="/images/products/sacola-visionari.png"
+                alt="Sacola promocional personalizada Visionari, produzida pela Delta Soluções"
+                width={1179}
+                height={1471}
+                priority
+                className="relative z-10 w-auto h-auto max-w-[210px] sm:max-w-[270px] md:max-w-none"
+                style={{
+                  maxHeight: 520,
+                  filter: "drop-shadow(0 30px 34px rgba(74,26,6,.45))",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
