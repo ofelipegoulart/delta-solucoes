@@ -6,16 +6,20 @@
 
   --color-laranja: #f26522;
   --color-laranja-dark: #c94f18;
+  --color-laranja-profundo: #a8400d;
   --color-marinho: #172a3a;
   --color-marinho-sombra: #132330;
   --color-grafite: #293238;
   --color-off-white: #f7f5f0;
+  --color-off-white-morno: #fdeee5;
   --color-cinza-claro: #dde2e5;
 
   --color-branco: #ffffff;
   --color-tinta: #293238;
   --color-borda: #dde2e5;
   --color-borda-warm: #d6d2c8;
+  --color-borda-morna: #f5cdb3;
+  --color-borda-morna-fraca: #e4b799;
 }
 
 @theme inline {
@@ -23,15 +27,19 @@
   --color-foreground: var(--foreground);
   --color-laranja: var(--color-laranja);
   --color-laranja-dark: var(--color-laranja-dark);
+  --color-laranja-profundo: var(--color-laranja-profundo);
   --color-marinho: var(--color-marinho);
   --color-marinho-sombra: var(--color-marinho-sombra);
   --color-grafite: var(--color-grafite);
   --color-off-white: var(--color-off-white);
+  --color-off-white-morno: var(--color-off-white-morno);
   --color-cinza-claro: var(--color-cinza-claro);
   --color-branco: var(--color-branco);
   --color-tinta: var(--color-tinta);
   --color-borda: var(--color-borda);
   --color-borda-warm: var(--color-borda-warm);
+  --color-borda-morna: var(--color-borda-morna);
+  --color-borda-morna-fraca: var(--color-borda-morna-fraca);
   --font-sans: var(--font-roboto);
   --font-heading: var(--font-archivo);
 }

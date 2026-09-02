@@ -18,8 +18,8 @@ export default function NavLink({
       <span
         className={
           variant === "desktop"
-            ? "text-laranja font-semibold border-b-2 border-laranja pb-0.5"
-            : "text-laranja font-semibold"
+            ? "text-laranja-profundo font-semibold border-b-2 border-laranja pb-0.5"
+            : "text-laranja-profundo font-semibold"
         }
       >
         {label}
@@ -28,7 +28,7 @@ export default function NavLink({
   }
 
   return (
-    <Link href={href} className="hover:text-laranja transition-colors">
+    <Link href={href} className="hover:text-laranja-profundo transition-colors">
       {label}
     </Link>
   );

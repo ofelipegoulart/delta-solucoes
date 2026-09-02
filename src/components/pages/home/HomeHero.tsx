@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HomeHero() {
   return (
     <section
-      className="relative w-full bg-marinho text-off-white"
+      className="relative w-full bg-laranja-profundo text-off-white"
       style={{
         minHeight: 580,
         clipPath:
@@ -17,7 +17,7 @@ export default function HomeHero() {
             <h1 className="text-[32px] sm:text-[42px] md:text-[54px] font-semibold leading-[1.04] tracking-[-0.028em] text-balance mb-5">
               A solução perfeita para você
             </h1>
-            <p className="text-[16px] md:text-[18px] leading-[1.6] opacity-[0.82] max-w-[470px] mx-auto md:mx-0 mb-8">
+            <p className="text-[16px] md:text-[18px] leading-[1.6] text-off-white max-w-[470px] mx-auto md:mx-0 mb-8">
               Qualidade de acabamento e preço justo em materiais que
               revolucionam o mercado — da embalagem ao rótulo, do promocional
               ao impresso sob medida.
@@ -26,13 +26,13 @@ export default function HomeHero() {
             <div className="flex flex-row gap-3">
               <Link
                 href="/contato"
-                className="flex-1 flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-3 sm:px-5 py-3 bg-laranja text-white transition-colors hover:bg-white hover:text-marinho"
+                className="flex-1 flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-3 sm:px-5 py-3 bg-marinho text-white transition-colors hover:bg-white hover:text-marinho"
               >
                 Solicitar Orçamento
               </Link>
               <Link
                 href="/sobre-nos"
-                className="flex-1 flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-3 sm:px-5 py-3 border-2 border-off-white/50 text-off-white transition-colors hover:bg-off-white hover:text-marinho"
+                className="flex-1 flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-3 sm:px-5 py-3 border-2 border-off-white/55 text-off-white transition-colors hover:bg-off-white hover:text-laranja-profundo"
               >
                 Conheça Nossa Estrutura
               </Link>
@@ -49,7 +49,7 @@ export default function HomeHero() {
               className="w-auto h-auto max-w-[200px] sm:max-w-[260px] md:max-w-none"
               style={{
                 maxHeight: 500,
-                filter: "drop-shadow(0 30px 34px rgba(0,0,0,.45))",
+                filter: "drop-shadow(0 30px 34px rgba(74,26,6,.45))",
               }}
             />
           </div>

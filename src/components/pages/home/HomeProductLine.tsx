@@ -56,11 +56,11 @@ export default function HomeProductLine() {
           {PRODUCTS.map((product) => (
             <div
               key={product.title}
-              className="bg-off-white border-t-[3px] border-laranja flex flex-col"
+              className="bg-off-white-morno border-t-[6px] border-laranja flex flex-col"
             >
               <div
-                className={`h-[200px] mx-6 mt-6 flex items-center justify-center text-[10px] text-grafite/50 relative overflow-hidden ${
-                  product.image ? "bg-branco" : "bg-cinza-claro/40"
+                className={`h-[200px] mx-6 mt-6 flex items-center justify-center text-[10px] text-laranja-profundo relative overflow-hidden ${
+                  product.image ? "bg-branco" : "border border-dashed border-borda-morna-fraca"
                 }`}
               >
                 {product.image ? (
@@ -83,7 +83,7 @@ export default function HomeProductLine() {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-                <div className="text-sm sm:text-base font-medium border-2 border-laranja text-laranja px-3 py-2 text-center w-full mt-auto transition-colors hover:bg-laranja hover:text-white">
+                <div className="text-sm sm:text-base font-medium border-2 border-laranja-profundo text-laranja-profundo px-3 py-2 text-center w-full mt-auto transition-colors hover:bg-laranja hover:text-white hover:border-laranja">
                   {product.cta}
                 </div>
               </div>

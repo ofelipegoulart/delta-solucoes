@@ -24,22 +24,28 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
 
   return (
     <>
-      <header className="sticky top-0 z-40 bg-off-white border-b border-cinza-claro">
+      <header className="sticky top-0 z-40 bg-off-white-morno border-t-4 border-t-laranja border-b border-b-borda-morna">
         <div className="max-w-310 mx-auto h-20 flex items-center justify-between px-6 md:px-12">
-          <Link href="/" className="flex gap-5 items-center hover:opacity-85 transition-opacity">
+          <Link href="/" className="flex gap-3 items-center hover:opacity-85 transition-opacity">
             <Image
-              src="/images/logos/logo-header-v2.png"
+              src="/images/logos/logo-header-laranja.png"
               alt="Delta Soluções"
               width={166}
               height={144}
               className="h-11 w-auto object-contain"
               priority
             />
-            <span className="flex flex-col leading-tight">
-              <span className="font-semibold text-marinho text-lg tracking-tight">
+            <span className="flex flex-col" style={{ lineHeight: 1.15 }}>
+              <span
+                className="font-bold text-marinho"
+                style={{ fontFamily: "var(--font-heading)", fontSize: 17, letterSpacing: "-0.01em" }}
+              >
                 Delta
               </span>
-              <span className="text-xs font-medium uppercase tracking-wide text-grafite">
+              <span
+                className="font-medium uppercase text-grafite"
+                style={{ fontFamily: "var(--font-sans)", fontSize: 9.5, letterSpacing: "0.14em" }}
+              >
                 Soluções em Impressão
               </span>
             </span>
@@ -56,7 +62,7 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
             ))}
             <Link
               href="/contato"
-              className="bg-laranja hover:bg-laranja-dark transition-colors px-4 py-2 rounded text-white text-sm font-medium"
+              className="bg-laranja hover:bg-laranja-profundo transition-colors px-4 py-2 rounded text-white text-sm font-medium"
             >
               Orçamento
             </Link>
@@ -105,7 +111,7 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
         onClick={() => setDrawerOpen(false)}
       />
       <nav
-        className={`md:hidden fixed top-0 right-0 z-40 h-full w-64 max-w-[80%] bg-off-white border-l border-cinza-claro shadow-xl transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 z-40 h-full w-64 max-w-[80%] bg-off-white-morno border-l border-borda-morna shadow-xl transform transition-transform duration-300 ease-in-out ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -113,20 +119,26 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
           {showLogoOnMobile && (
             <Link
               href="/"
-              className="flex items-center gap-2.5 self-start mb-2 hover:opacity-85 transition-opacity"
+              className="flex items-center gap-3 self-start mb-2 hover:opacity-85 transition-opacity"
             >
               <Image
-                src="/images/logos/logo-header-v2.png"
+                src="/images/logos/logo-header-laranja.png"
                 alt="Delta Soluções"
                 width={166}
                 height={144}
                 className="h-9 w-auto object-contain"
               />
-              <span className="flex flex-col leading-tight">
-                <span className="font-semibold text-marinho text-lg tracking-tight">
+              <span className="flex flex-col" style={{ lineHeight: 1.15 }}>
+                <span
+                  className="font-bold text-marinho"
+                  style={{ fontFamily: "var(--font-heading)", fontSize: 17, letterSpacing: "-0.01em" }}
+                >
                   Delta
                 </span>
-                <span className="text-xs font-medium uppercase tracking-wide text-grafite">
+                <span
+                  className="font-medium uppercase text-grafite"
+                  style={{ fontFamily: "var(--font-sans)", fontSize: 9.5, letterSpacing: "0.14em" }}
+                >
                   Soluções em Impressão
                 </span>
               </span>
@@ -143,7 +155,7 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
           ))}
           <Link
             href="/contato"
-            className="bg-laranja hover:bg-laranja-dark transition-colors px-3 py-2 rounded text-white text-sm font-medium text-center"
+            className="bg-laranja hover:bg-laranja-profundo transition-colors px-3 py-2 rounded text-white text-sm font-medium text-center"
           >
             Orçamento
           </Link>
