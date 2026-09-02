@@ -46,10 +46,11 @@ export default function HomeHero() {
                 alt="Caixa de acetato personalizada, produzida pela Delta Soluções"
                 width={640}
                 height={852}
-                className="absolute z-0 top-1/2 -translate-y-1/2 right-[-55px] sm:right-[-80px] md:right-[-120px] w-auto h-auto max-w-[200px] sm:max-w-[250px] md:max-w-[330px]"
+                className="absolute z-0 top-1/2 -translate-y-1/2 right-[-42px] sm:right-[-65px] md:right-[-102px] w-auto h-auto max-w-[200px] sm:max-w-[250px] md:max-w-[330px]"
                 style={{
                   maxHeight: 450,
-                  filter: "drop-shadow(0 20px 24px rgba(74,26,6,.4))",
+                  filter:
+                    "drop-shadow(0 4px 5px rgba(20,9,3,.5)) drop-shadow(0 14px 14px rgba(20,9,3,.35)) drop-shadow(0 26px 22px rgba(20,9,3,.25))",
                 }}
               />
               <Image
@@ -61,7 +62,8 @@ export default function HomeHero() {
                 className="relative z-10 w-auto h-auto max-w-[210px] sm:max-w-[270px] md:max-w-none"
                 style={{
                   maxHeight: 520,
-                  filter: "drop-shadow(0 30px 34px rgba(74,26,6,.45))",
+                  filter:
+                    "drop-shadow(0 5px 6px rgba(20,9,3,.55)) drop-shadow(0 18px 18px rgba(20,9,3,.38)) drop-shadow(0 34px 30px rgba(20,9,3,.28))",
                 }}
               />
             </div>
