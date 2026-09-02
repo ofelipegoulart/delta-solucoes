@@ -1,8 +1,46 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-const LOGOS = [1, 2, 3, 4, 5, 6];
+const LOGOS = [
+  {
+    src: "/images/logos/clientes/moderna.webp",
+    alt: "Moderna",
+    width: 1280,
+    height: 295,
+  },
+  {
+    src: "/images/logos/clientes/azulla.png",
+    alt: "Azulla",
+    width: 400,
+    height: 180,
+  },
+  {
+    src: "/images/logos/clientes/citadel.png",
+    alt: "Citadel",
+    width: 480,
+    height: 126,
+  },
+  {
+    src: "/images/logos/clientes/mrveggy.webp",
+    alt: "Mr. Veggy",
+    width: 1168,
+    height: 380,
+  },
+  {
+    src: "/images/logos/clientes/terumo.png",
+    alt: "Terumo",
+    width: 800,
+    height: 450,
+  },
+  {
+    src: "/images/logos/clientes/genebra-chocolates.png",
+    alt: "Genebra Chocolates",
+    width: 400,
+    height: 175,
+  },
+];
 
 export default function HomeLogos() {
   const viewportRef = useRef<HTMLDivElement>(null);
@@ -73,7 +111,7 @@ export default function HomeLogos() {
     <section className="w-full bg-off-white border-b border-borda">
       <div className="max-w-310 mx-auto px-6 md:px-12 py-6 md:py-7">
         <div className="flex flex-col items-center md:flex-row md:items-center gap-4 md:gap-9">
-          <p className="text-xs font-medium tracking-[0.16em] uppercase opacity-65 shrink-0 text-tinta text-center md:text-left whitespace-nowrap">
+          <p className="text-sm md:text-base font-semibold tracking-[0.08em] uppercase shrink-0 text-marinho text-center md:text-left whitespace-nowrap">
             Empresas que confiam na Delta
           </p>
 
@@ -93,24 +131,36 @@ export default function HomeLogos() {
             }}
           >
             <div ref={trackRef} className="flex w-max will-change-transform">
-              {[...LOGOS, ...LOGOS].map((n, i) => (
+              {[...LOGOS, ...LOGOS].map((logo, i) => (
                 <div
                   key={i}
-                  className="h-[46px] w-[140px] mr-9 rounded flex items-center justify-center text-[9px] text-grafite/70 bg-cinza-claro/40 border border-dashed border-borda shrink-0"
+                  className="h-[46px] w-[140px] mr-9 flex items-center justify-center shrink-0"
                 >
-                  logo {n}
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className="max-h-11.5 max-w-35 w-auto h-auto object-contain grayscale opacity-80"
+                  />
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="hidden md:grid grid-cols-4 gap-9 items-center flex-1">
-            {LOGOS.slice(0, 4).map((n) => (
+          <div className="hidden md:grid grid-cols-6 gap-9 items-center flex-1">
+            {LOGOS.map((logo) => (
               <div
-                key={n}
-                className="h-[46px] rounded flex items-center justify-center text-[9px] text-grafite/70 bg-cinza-claro/40 border border-dashed border-borda"
+                key={logo.src}
+                className="h-[46px] flex items-center justify-center"
               >
-                logo {n}
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={logo.width}
+                  height={logo.height}
+                  className="max-h-11.5 max-w-full w-auto h-auto object-contain grayscale opacity-80 transition hover:grayscale-0 hover:opacity-100"
+                />
               </div>
             ))}
           </div>
