@@ -40,13 +40,13 @@ export default function HomeHero() {
           </div>
 
           <div className="md:self-end flex justify-center pt-8 pb-16 md:pt-0 md:pb-0">
-            <div className="relative">
+            <div className="relative -translate-x-4 sm:translate-x-0">
               <Image
                 src="/images/products/caixa-acetato.png"
                 alt="Caixa de acetato personalizada, produzida pela Delta Soluções"
                 width={640}
                 height={852}
-                className="absolute z-0 top-1/2 -translate-y-1/2 right-[-42px] sm:right-[-65px] md:right-[-102px] w-auto h-auto max-w-[200px] sm:max-w-[250px] md:max-w-[330px]"
+                className="absolute z-0 top-1/2 -translate-y-1/2 right-[-46px] sm:right-[-65px] md:right-[-102px] w-auto h-auto max-w-[200px] sm:max-w-[250px] md:max-w-[330px]"
                 style={{
                   maxHeight: 450,
                   filter:
