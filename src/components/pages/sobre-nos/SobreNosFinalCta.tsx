@@ -1,17 +1,34 @@
+import Link from "next/link";
+
 export default function SobreNosFinalCta() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-8 pb-10 md:pb-16">
-      <div className="wf-box rounded-lg p-8 sm:p-12 md:p-16 text-center">
-        <span className="inline-block text-[10px] sm:text-xs bg-neutral-800 text-white px-2 py-1 rounded mb-5">
-          06 · CTA FINAL
-        </span>
-        <p className="text-sm sm:text-base text-neutral-600 max-w-xl mx-auto mb-6 leading-relaxed">
+    <section id="orcamento" className="w-full bg-laranja-profundo text-off-white">
+      <div
+        className="max-w-310 mx-auto px-6 md:px-12 text-center flex flex-col items-center gap-6.5"
+        style={{
+          paddingTop: "clamp(52px, 8vw, 80px)",
+          paddingBottom: "clamp(52px, 8vw, 80px)",
+        }}
+      >
+        <h2
+          className="font-bold text-balance"
+          style={{
+            fontSize: "clamp(26px, 3.8vw, 36px)",
+            lineHeight: 1.16,
+            letterSpacing: "-0.02em",
+            maxWidth: "32ch",
+          }}
+        >
           Tem um projeto parado esperando alguém tirar do papel? Conta pra
           gente o que você precisa e a gente indica o caminho.
-        </p>
-        <div className="bg-neutral-800 text-white text-xs sm:text-sm font-medium rounded px-6 py-3 inline-block">
+        </h2>
+        <Link
+          href="/contato"
+          className="inline-flex items-center justify-center text-center font-bold rounded-[3px] bg-branco text-laranja-profundo transition-colors hover:bg-marinho hover:text-white"
+          style={{ padding: "16px 30px", fontSize: 15 }}
+        >
           Falar com um Especialista
-        </div>
+        </Link>
       </div>
     </section>
   );

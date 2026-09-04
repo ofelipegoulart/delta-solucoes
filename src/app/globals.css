@@ -129,3 +129,62 @@ h6 {
     display: none;
   }
 }
+
+.sobre-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+}
+
+.sobre-etapas-grid,
+.sobre-pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(14px, 2vw, 28px);
+}
+
+.sobre-parque-lista-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(20px, 3vw, 44px);
+}
+
+.sobre-parque-fotos-grid,
+.sobre-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(14px, 2vw, 28px);
+}
+
+@media (max-width: 859px) {
+  .sobre-hero-grid,
+  .sobre-etapas-grid,
+  .sobre-pilares-grid,
+  .sobre-parque-lista-grid,
+  .sobre-parque-fotos-grid,
+  .sobre-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .sobre-hero-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+
+  .sobre-etapas-grid,
+  .sobre-pilares-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sobre-parque-lista-grid,
+  .sobre-parque-fotos-grid,
+  .sobre-portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sobre-card {
+    break-inside: avoid;
+  }
+}

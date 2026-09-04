@@ -1,52 +1,84 @@
+import Image from "next/image";
+import FotoPendente from "./FotoPendente";
+
 const CASES = [
   {
-    label: "[ foto: sacola personalizada ]",
-    title: "Sacolas personalizadas",
-    text: "Sabe aquela sensação de receber um presente especial? É isso que uma sacola bem resolvida entrega ao seu cliente. Além de proteger o produto, ela agrega valor e mostra que cada detalhe foi pensado com atenção.",
+    titulo: "Sacolas personalizadas",
+    fotoLabel: "Foto: sacola personalizada — pendente",
+    foto: undefined,
+    texto:
+      "Sabe aquela sensação de receber um presente especial? É isso que uma sacola bem resolvida entrega ao seu cliente. Além de proteger o produto, ela agrega valor e mostra que cada detalhe foi pensado com atenção.",
   },
   {
-    label: "[ foto: caixa com visor em acetato ]",
-    title: "Caixas com visor em acetato",
-    text: "O visor deixa o conteúdo à mostra sem que ninguém precise abrir a caixa. Funciona para brinde de festa, casamento, confraternização, doces. Em kraft 150g, e ainda dá para complementar com uma faixa exclusiva ou adesivo da sua marca.",
+    titulo: "Caixas com visor em acetato",
+    fotoLabel: "Foto: caixa com visor em acetato — pendente",
+    foto: "/images/products/caixa-acetato.png",
+    texto:
+      "O visor deixa o conteúdo à mostra sem que ninguém precise abrir a caixa. Funciona para brinde de festa, casamento, confraternização, doces. Em kraft 150g, e ainda dá para complementar com uma faixa exclusiva ou adesivo da sua marca.",
   },
 ];
 
 export default function SobreNosPortfolio() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-8 pb-10 md:pb-14">
-      <div className="wf-box rounded-lg p-5 sm:p-8">
-        <span className="inline-block text-[10px] sm:text-xs bg-neutral-800 text-white px-2 py-1 rounded mb-4">
-          04 · PORTFÓLIO EM FOCO
-        </span>
+    <section id="portfolio" className="w-full bg-branco py-16 md:py-20">
+      <div className="max-w-310 mx-auto px-6 md:px-12">
+        <div className="border-t border-borda pt-[26px] mb-8 md:mb-9">
+          <h2
+            className="font-bold text-marinho mb-5"
+            style={{ fontSize: "clamp(25px, 3.6vw, 34px)", letterSpacing: "-0.02em" }}
+          >
+            Alguns trabalhos que gostamos de mostrar
+          </h2>
+          <p
+            className="text-tinta leading-[1.62]"
+            style={{ fontSize: "clamp(15.5px, 1.7vw, 17px)", maxWidth: "74ch" }}
+          >
+            Embalagem não é só o que protege o produto. É uma extensão da
+            identidade da sua marca e a primeira coisa que o cliente vê,
+            antes mesmo de chegar no que está dentro. Cada detalhe conta: do
+            design às cores, do material ao acabamento. É esse tipo de
+            resultado que perseguimos em cada projeto.
+          </p>
+        </div>
 
-        <p className="text-[10px] sm:text-xs text-neutral-400 mb-2">H2</p>
-        <h2 className="text-base sm:text-lg font-semibold text-neutral-700 mb-4">
-          Alguns trabalhos que gostamos de mostrar
-        </h2>
-
-        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-6">
-          Embalagem não é só o que protege o produto. É uma extensão da
-          identidade da sua marca e a primeira coisa que o cliente vê, antes
-          mesmo de chegar no que está dentro. Cada detalhe conta: do design
-          às cores, do material ao acabamento. É esse tipo de resultado que
-          perseguimos em cada projeto.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="sobre-portfolio-grid">
           {CASES.map((item) => (
-            <div
-              key={item.title}
-              className="bg-white border border-neutral-300 rounded-lg overflow-hidden"
-            >
-              <div className="wf-img h-32 sm:h-40 flex items-center justify-center text-[10px] text-neutral-500">
-                {item.label}
-              </div>
-              <div className="p-4">
-                <h3 className="text-sm font-semibold text-neutral-700 mb-1">
-                  {item.title}
+            <div key={item.titulo} className="bg-off-white-morno sobre-card">
+              {item.foto ? (
+                <div
+                  className="relative bg-branco border border-off-white-morno border-b-[0.5px]"
+                  style={{ height: "clamp(200px, 26vw, 300px)" }}
+                >
+                  <Image
+                    src={item.foto}
+                    alt={item.titulo}
+                    fill
+                    className="object-contain p-4"
+                    sizes="(min-width: 860px) 50vw, 100vw"
+                    style={{
+                      filter:
+                        "drop-shadow(0 3px 4px rgba(20,9,3,.28)) drop-shadow(0 10px 10px rgba(20,9,3,.18)) drop-shadow(0 18px 16px rgba(20,9,3,.12))",
+                    }}
+                  />
+                </div>
+              ) : (
+                <FotoPendente
+                  label={item.fotoLabel}
+                  height="clamp(200px, 26vw, 300px)"
+                />
+              )}
+              <div style={{ padding: "clamp(18px, 2.5vw, 26px)" }}>
+                <h3
+                  className="font-bold text-marinho mb-2"
+                  style={{ fontSize: 19, letterSpacing: "-0.015em" }}
+                >
+                  {item.titulo}
                 </h3>
-                <p className="text-xs text-neutral-500 leading-relaxed">
-                  {item.text}
+                <p
+                  className="text-tinta leading-[1.6]"
+                  style={{ fontSize: 15.5 }}
+                >
+                  {item.texto}
                 </p>
               </div>
             </div>
