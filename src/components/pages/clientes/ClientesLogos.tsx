@@ -1,23 +1,29 @@
+import Image from "next/image";
+import { LOGOS_FAIXA } from "./clientes-content";
+
 export default function ClientesLogos() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-8 pb-10 md:pb-14">
-      <div className="wf-box rounded-lg p-4 sm:p-6">
-        <span className="inline-block text-[10px] sm:text-xs bg-neutral-800 text-white px-2 py-1 rounded mb-4">
-          04 · LOGOS DE CLIENTES (faixa discreta)
-        </span>
-        <div className="flex items-center gap-6 overflow-x-auto md:overflow-visible md:justify-between pb-1 md:pb-0">
-          {[1, 2, 3, 4].map((n) => (
+    <section className="w-full bg-branco" style={{ padding: "64px 0 104px" }}>
+      <div className="max-w-310 mx-auto px-6 md:px-12">
+        <div
+          className="border-t border-b border-borda grid grid-cols-2 min-[860px]:grid-cols-4 gap-9 items-center"
+          style={{ padding: "30px 0" }}
+        >
+          {LOGOS_FAIXA.map((logo) => (
             <div
-              key={n}
-              className="wf-img rounded shrink-0 w-20 h-9 flex items-center justify-center text-[9px] text-neutral-500 opacity-70"
+              key={logo.alt}
+              className="h-10 flex items-center justify-center opacity-55"
             >
-              logo {n}
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={logo.width}
+                height={logo.height}
+                className="max-h-10 max-w-full w-auto h-auto object-contain"
+              />
             </div>
           ))}
         </div>
-        <p className="text-[10px] text-neutral-400 mt-3">
-          ↳ reforço visual, não protagonista — mesmos logos já usados na Home
-        </p>
       </div>
     </section>
   );

@@ -30,7 +30,7 @@ const CATEGORIAS: Categoria[] = [
       "caixas para alimentos secos e congelados, embalagens para medicamentos, caixas com visor, sacolas personalizadas e proteção para produtos em geral.",
     images: [
       "/images/servicos/embalagem-2.jpg",
-      "/images/servicos/embalagem-1.jpeg",
+      "/images/servicos/embalagem-1.png",
       "/images/products/hamburguer-legumes-600-x-600.webp",
     ],
   },

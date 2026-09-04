@@ -18,7 +18,7 @@ export default function NavLink({
       <span
         className={
           variant === "desktop"
-            ? "text-laranja-profundo font-semibold border-b-2 border-laranja pb-0.5"
+            ? "text-laranja-profundo font-semibold border-b-[3px] border-laranja pb-0.5"
             : "text-laranja-profundo font-semibold"
         }
       >

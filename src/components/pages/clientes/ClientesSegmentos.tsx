@@ -1,39 +1,82 @@
-const SEGMENTOS = ["Alimentos", "Cosméticos", "Farmacêutico", "Varejo"];
+import Image from "next/image";
+import { Droplet, Pill, ShoppingBag, UtensilsCrossed } from "lucide-react";
+import { SEGMENTOS } from "./clientes-content";
+
+const SEGMENTO_ICONS: Record<string, typeof Droplet> = {
+  Alimentos: UtensilsCrossed,
+  Cosméticos: Droplet,
+  Farmacêutico: Pill,
+  Varejo: ShoppingBag,
+};
 
 export default function ClientesSegmentos() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-8 pb-10 md:pb-14">
-      <div className="wf-box rounded-lg p-5 sm:p-8">
-        <span className="inline-block text-[10px] sm:text-xs bg-neutral-800 text-white px-2 py-1 rounded mb-4">
-          02 · SEGMENTOS ATENDIDOS
-        </span>
-
-        <p className="text-[10px] sm:text-xs text-neutral-400 mb-2">H2</p>
-        <h2 className="text-base sm:text-lg font-semibold text-neutral-700 mb-4">
+    <section
+      id="segmentos"
+      className="w-full bg-branco"
+      style={{ paddingTop: 68 }}
+    >
+      <div className="max-w-310 mx-auto px-6 md:px-12 pb-16 md:pb-20">
+        <h2
+          className="font-bold text-marinho mb-3"
+          style={{ fontSize: "clamp(25px, 3.6vw, 34px)", letterSpacing: "-0.02em" }}
+        >
           Setores que já passaram pela nossa produção
         </h2>
-        <p className="text-sm md:text-base text-neutral-500 leading-relaxed mb-6">
+        <p className="text-tinta leading-[1.6]" style={{ maxWidth: "66ch" }}>
           Em vez de uma lista enorme de nomes, preferimos mostrar a
           diversidade de quem já trabalhou com a gente — isso diz mais sobre
           nossa experiência do que uma parede de logos.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {SEGMENTOS.map((segmento) => (
-            <div
-              key={segmento}
-              className="bg-white border border-neutral-300 rounded-lg p-4 text-center"
-            >
-              <div className="wf-img rounded-full w-10 h-10 mx-auto mb-2" />
-              <p className="text-xs font-medium text-neutral-600">
-                {segmento}
-              </p>
-            </div>
-          ))}
+        <div
+          className="grid grid-cols-4 mt-11"
+          style={{ gap: "clamp(8px, 2vw, 28px)" }}
+        >
+          {SEGMENTOS.map((segmento) => {
+            const Icon = SEGMENTO_ICONS[segmento.nome];
+            return (
+              <div
+                key={segmento.nome}
+                className="flex flex-col items-center text-center bg-off-white-morno"
+                style={{
+                  gap: "clamp(8px, 2vw, 18px)",
+                  padding: "clamp(10px, 3vw, 24px)",
+                }}
+              >
+                <div
+                  className="rounded-full bg-branco flex items-center justify-center shrink-0 text-laranja-profundo"
+                  style={{
+                    width: "clamp(44px, 11vw, 76px)",
+                    height: "clamp(44px, 11vw, 76px)",
+                    padding: "clamp(10px, 3vw, 22px)",
+                  }}
+                >
+                  {segmento.icone ? (
+                    <Image
+                      src={segmento.icone}
+                      alt=""
+                      width={30}
+                      height={30}
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    Icon && <Icon className="w-full h-full" strokeWidth={1.8} aria-hidden />
+                  )}
+                </div>
+                <p
+                  className="font-semibold text-marinho"
+                  style={{
+                    fontFamily: "var(--font-heading)",
+                    fontSize: "clamp(11px, 2.6vw, 19px)",
+                  }}
+                >
+                  {segmento.nome}
+                </p>
+              </div>
+            );
+          })}
         </div>
-        <p className="md:hidden text-[10px] text-neutral-400 mt-4">
-          ↳ mobile: grid 2×2 · desktop: grid 1×4
-        </p>
       </div>
     </section>
   );
