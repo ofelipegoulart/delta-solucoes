@@ -1,5 +1,10 @@
 import ContatoPage from "@/components/pages/contato/ContatoPage";
 
-export default function Page() {
-  return <ContatoPage />;
+type Props = {
+  searchParams: Promise<{ modo?: string }>;
+};
+
+export default async function Page({ searchParams }: Props) {
+  const { modo } = await searchParams;
+  return <ContatoPage initialModo={modo} />;
 }

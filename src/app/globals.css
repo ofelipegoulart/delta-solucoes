@@ -88,3 +88,44 @@ h6 {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   letter-spacing: 0.04em;
 }
+
+.contato-corpo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: clamp(28px, 4vw, 56px);
+  align-items: start;
+}
+
+.contato-campos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 859px) {
+  .contato-corpo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-campos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .contato-corpo-grid {
+    grid-template-columns: 0.82fr 1.18fr;
+  }
+
+  .contato-campos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contato-card {
+    break-inside: avoid;
+  }
+
+  .contato-rede-nome {
+    display: none;
+  }
+}
