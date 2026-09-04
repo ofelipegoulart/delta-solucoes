@@ -1,4 +1,4 @@
-import ZoomImage from "./ZoomImage";
+import ZoomImage from "@/components/ui/ZoomImage";
 
 type Product = {
   title: string;
