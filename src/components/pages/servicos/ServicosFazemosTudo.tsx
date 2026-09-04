@@ -35,7 +35,7 @@ export default function ServicosFazemosTudo() {
 
           <div className="relative bg-branco h-[clamp(200px,26vw,320px)]">
             <Image
-              src="/servicos-nao-achou.jpg"
+              src="/images/servicos/nao-achou.jpg"
               alt="Máquina de impressão offset da Delta Soluções"
               fill
               className="object-cover"

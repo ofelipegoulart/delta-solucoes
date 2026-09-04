@@ -18,9 +18,9 @@ const CATEGORIAS: Categoria[] = [
     examples:
       "catálogos, folders, flyers, cadernos e livros em capa dura ou cartonada, tags, wobblers, móbiles e materiais de ponto de venda.",
     images: [
-      "/material-promocional-1.avif",
-      "/material-promocional-2.webp",
       "/images/products/promocionais.png",
+      "/images/servicos/promocional-2.webp",
+      "/images/servicos/promocional-1.avif",
     ],
   },
   {
@@ -29,8 +29,8 @@ const CATEGORIAS: Categoria[] = [
     examples:
       "caixas para alimentos secos e congelados, embalagens para medicamentos, caixas com visor, sacolas personalizadas e proteção para produtos em geral.",
     images: [
-      "/embalagem-1.jpeg",
-      "/embalagem-2.jpg",
+      "/images/servicos/embalagem-2.jpg",
+      "/images/servicos/embalagem-1.jpeg",
       "/images/products/hamburguer-legumes-600-x-600.webp",
     ],
   },
@@ -40,8 +40,8 @@ const CATEGORIAS: Categoria[] = [
     examples:
       "rótulos, adesivos, tags, etiquetas em tubetes ou cartelas e selos de lacre.",
     images: [
-      "/03-adesivo-deiton-lubrificantes.jpg",
-      "/04-rotulo-scania-coolant.jpg",
+      "/images/servicos/adesivos-1.avif",
+      "/images/servicos/adesivos-deiton-lubrificantes.jpg",
       { src: "/images/products/valvoline-e700-15w40.webp", fit: "contain" },
     ],
   },
@@ -51,9 +51,9 @@ const CATEGORIAS: Categoria[] = [
     examples:
       "lonas, banners, painéis, faixas e materiais para fachada e ponto de venda.",
     images: [
-      "/servicos-comunicacao-visual-1.jpg",
-      "/servicos-comunicacao-visual-2.jpg",
-      "/servicos-comunicacao-visual-3.jpg",
+      "/images/servicos/comunicacao-visual-1.jpg",
+      "/images/servicos/comunicacao-visual-2.jpg",
+      "/images/servicos/comunicacao-visual-3.jpg",
     ],
   },
 ];
