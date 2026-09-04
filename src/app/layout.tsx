@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Roboto } from "next/font/google";
+import CookieConsentBanner from "@/components/cookie-consent/CookieConsentBanner";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-neutral-100 text-neutral-800 font-sans antialiased">
         {children}
+        <CookieConsentBanner />
       </body>
     </html>
   );
