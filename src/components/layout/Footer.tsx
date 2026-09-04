@@ -28,12 +28,18 @@ export default function Footer() {
               height={144}
               className="h-12 w-auto object-contain shrink-0"
             />
-            <div className="flex flex-col gap-0.5">
-              <span className="font-semibold text-white text-sm tracking-tight">
-                Delta Soluções
+            <div className="flex flex-col" style={{ lineHeight: 1.15 }}>
+              <span
+                className="font-bold text-white"
+                style={{ fontFamily: "var(--font-heading)", fontSize: 20, letterSpacing: "-0.01em" }}
+              >
+                Delta
               </span>
-              <span className="text-[11px] text-cinza-claro leading-relaxed">
-                Qualidade e Confiança
+              <span
+                className="font-medium uppercase text-cinza-claro"
+                style={{ fontFamily: "var(--font-sans)", fontSize: 11, letterSpacing: "0.14em" }}
+              >
+                Soluções em Impressão
               </span>
             </div>
           </Link>
@@ -103,26 +109,40 @@ export default function Footer() {
         </div>
 
         {/* Desktop layout */}
-        <div className="hidden md:grid md:grid-cols-[1.2fr_1.1fr_.8fr_.8fr] gap-10">
+        <div className="hidden md:grid md:grid-cols-[1.2fr_1.1fr_.8fr_.8fr] gap-10 items-center">
           <div>
             <Link
               href="/"
-              className="flex items-center gap-2 mb-3 hover:opacity-85 transition-opacity w-fit"
+              className="flex items-start gap-2 hover:opacity-85 transition-opacity w-fit"
             >
               <Image
                 src="/images/logos/logo-footer-v2.png"
                 alt="Delta Soluções"
                 width={166}
                 height={144}
-                className="h-12 w-auto object-contain"
+                className="h-12 w-auto object-contain shrink-0"
               />
-              <span className="font-semibold text-white text-sm tracking-tight">
-                Delta Soluções
+              <span className="flex flex-col" style={{ lineHeight: 1.15 }}>
+                <span
+                  className="font-bold text-white"
+                  style={{ fontFamily: "var(--font-heading)", fontSize: 20, letterSpacing: "-0.01em" }}
+                >
+                  Delta
+                </span>
+                <span
+                  className="font-medium uppercase text-cinza-claro"
+                  style={{ fontFamily: "var(--font-sans)", fontSize: 11, letterSpacing: "0.14em" }}
+                >
+                  Soluções em Impressão
+                </span>
+                <span
+                  className="normal-case font-normal text-[11px] text-cinza-claro leading-relaxed mt-1"
+                  style={{ fontFamily: "var(--font-sans)" }}
+                >
+                  Qualidade e Confiança
+                </span>
               </span>
             </Link>
-            <p className="text-[11px] text-cinza-claro leading-relaxed">
-              Qualidade e Confiança
-            </p>
           </div>
 
           <div>
@@ -209,6 +229,18 @@ export default function Footer() {
             <span className="opacity-50">·</span>
             <ManageCookiesLink className="opacity-80 hover:opacity-100 hover:text-laranja transition-colors cursor-pointer" />
           </div>
+        </div>
+
+        <div className="text-center text-[11px] text-laranja mt-3">
+          Orgulhosamente feito por{" "}
+          <a
+            href="https://felipegoulart.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold hover:opacity-80 transition-opacity"
+          >
+            felipegoulart.dev
+          </a>
         </div>
       </div>
     </footer>
