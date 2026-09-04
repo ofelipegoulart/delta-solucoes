@@ -113,11 +113,11 @@ export default function Footer() {
                 +55 (11) 98751-8911
               </a>
               <a
-                href="mailto:matheus@grupomaxi.com.br"
+                href="mailto:matheus@groupmaxi.com.br"
                 className="flex items-center gap-2 opacity-80 hover:opacity-100 hover:text-laranja transition-colors w-fit"
               >
                 <MailIcon />
-                matheus@grupomaxi.com.br
+                matheus@groupmaxi.com.br
               </a>
               <div className="flex items-start gap-2 opacity-80">
                 <PinIcon />
@@ -200,11 +200,11 @@ export default function Footer() {
                 +55 (11) 98751-8911
               </a>
               <a
-                href="mailto:matheus@grupomaxi.com.br"
+                href="mailto:matheus@groupmaxi.com.br"
                 className="flex items-center gap-2 opacity-80 hover:opacity-100 hover:text-laranja transition-colors w-fit"
               >
                 <MailIcon />
-                matheus@grupomaxi.com.br
+                matheus@groupmaxi.com.br
               </a>
               <div className="flex items-start gap-2 opacity-80">
                 <PinIcon />
