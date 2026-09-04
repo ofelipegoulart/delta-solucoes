@@ -5,6 +5,7 @@ type NavLinkProps = {
   href: string;
   isCurrent: boolean;
   variant?: "desktop" | "mobile";
+  onClick?: () => void;
 };
 
 export default function NavLink({
@@ -12,6 +13,7 @@ export default function NavLink({
   href,
   isCurrent,
   variant = "desktop",
+  onClick,
 }: NavLinkProps) {
   if (isCurrent) {
     return (
@@ -19,7 +21,7 @@ export default function NavLink({
         className={
           variant === "desktop"
             ? "text-laranja-profundo font-semibold border-b-[3px] border-laranja pb-0.5"
-            : "text-laranja-profundo font-semibold"
+            : "text-branco font-semibold underline underline-offset-4"
         }
       >
         {label}
@@ -28,7 +30,15 @@ export default function NavLink({
   }
 
   return (
-    <Link href={href} className="hover:text-laranja-profundo transition-colors">
+    <Link
+      href={href}
+      onClick={onClick}
+      className={
+        variant === "desktop"
+          ? "hover:text-laranja-profundo transition-colors"
+          : "text-branco hover:text-marinho transition-colors"
+      }
+    >
       {label}
     </Link>
   );

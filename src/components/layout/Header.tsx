@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 
-export type NavKey = "home" | "servicos" | "clientes" | "sobre-nos" | "contato";
+export type NavKey = "home" | "servicos" | "clientes" | "sobre-nos" | "contato" | "legal";
 
 const NAV_ITEMS: { label: string; href: string; key: NavKey }[] = [
   { label: "Serviços", href: "/servicos", key: "servicos" },
@@ -16,10 +16,9 @@ const NAV_ITEMS: { label: string; href: string; key: NavKey }[] = [
 
 type HeaderProps = {
   current: NavKey;
-  showLogoOnMobile?: boolean;
 };
 
-export default function Header({ current, showLogoOnMobile = true }: HeaderProps) {
+export default function Header({ current }: HeaderProps) {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
@@ -61,7 +60,7 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
               />
             ))}
             <Link
-              href="/contato"
+              href="/contato?modo=orcamento"
               className="bg-laranja hover:bg-laranja-profundo transition-colors px-4 py-2 rounded text-white text-sm font-medium"
             >
               Orçamento
@@ -104,46 +103,12 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
         </div>
       </header>
 
-      <div
-        className={`md:hidden fixed inset-0 z-30 bg-marinho/40 transition-opacity ${
+      <nav
+        className={`md:hidden fixed inset-x-0 top-20 bottom-0 z-30 bg-laranja transition-opacity duration-300 ease-in-out overflow-y-auto ${
           drawerOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
-        onClick={() => setDrawerOpen(false)}
-      />
-      <nav
-        className={`md:hidden fixed top-0 right-0 z-40 h-full w-64 max-w-[80%] bg-branco border-l border-borda-morna shadow-xl transform transition-transform duration-300 ease-in-out ${
-          drawerOpen ? "translate-x-0" : "translate-x-full"
-        }`}
       >
-        <div className="px-6 py-6 flex flex-col gap-5 text-sm text-grafite">
-          {showLogoOnMobile && (
-            <Link
-              href="/"
-              className="flex items-center gap-3 self-start mb-2 hover:opacity-85 transition-opacity"
-            >
-              <Image
-                src="/images/logos/logo-header-laranja.png"
-                alt="Delta Soluções"
-                width={166}
-                height={144}
-                className="h-9 w-auto object-contain"
-              />
-              <span className="flex flex-col" style={{ lineHeight: 1.15 }}>
-                <span
-                  className="font-bold text-marinho"
-                  style={{ fontFamily: "var(--font-heading)", fontSize: 20, letterSpacing: "-0.01em" }}
-                >
-                  Delta
-                </span>
-                <span
-                  className="font-medium uppercase text-grafite"
-                  style={{ fontFamily: "var(--font-sans)", fontSize: 11, letterSpacing: "0.14em" }}
-                >
-                  Soluções em Impressão
-                </span>
-              </span>
-            </Link>
-          )}
+        <div className="px-6 py-8 flex flex-col gap-5 text-base">
           {NAV_ITEMS.map((item) => (
             <NavLink
               key={item.key}
@@ -151,11 +116,13 @@ export default function Header({ current, showLogoOnMobile = true }: HeaderProps
               href={item.href}
               isCurrent={current === item.key}
               variant="mobile"
+              onClick={() => setDrawerOpen(false)}
             />
           ))}
           <Link
-            href="/contato"
-            className="bg-laranja hover:bg-laranja-profundo transition-colors px-3 py-2 rounded text-white text-sm font-medium text-center"
+            href="/contato?modo=orcamento"
+            onClick={() => setDrawerOpen(false)}
+            className="bg-branco hover:bg-branco/90 transition-colors px-3 py-2 rounded text-laranja text-sm font-medium text-center"
           >
             Orçamento
           </Link>
