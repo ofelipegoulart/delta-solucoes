@@ -5,6 +5,7 @@ type CategoriaImage =
   | { src: string; position?: string; fit?: "cover" | "contain" };
 
 type Categoria = {
+  id: string;
   title: string;
   text: string;
   examples: string;
@@ -13,6 +14,7 @@ type Categoria = {
 
 const CATEGORIAS: Categoria[] = [
   {
+    id: "promocionais",
     title: "Promocionais",
     text: 'O material promocional tem que estar à altura do que você vende. Por mais que seja "só um folder" ou "só um flyer", o acabamento dele fala sobre o seu produto antes de o cliente ler a primeira linha. Se o que você vende é premium, o material que apresenta esse produto precisa comunicar isso — senão ele trabalha contra a sua marca.',
     examples:
@@ -24,6 +26,7 @@ const CATEGORIAS: Categoria[] = [
     ],
   },
   {
+    id: "embalagens",
     title: "Embalagens",
     text: 'A embalagem é a cara da sua marca. É o primeiro contato físico entre o que você vende e quem compra, e é ali que a decisão de "isso aqui vale o preço" costuma se confirmar. Qualquer acabamento que agregue diferença — um verniz localizado, um relevo, um material diferente, um visor — é o que faz o seu produto se destacar na prateleira e na lembrança do cliente.',
     examples:
@@ -35,6 +38,7 @@ const CATEGORIAS: Categoria[] = [
     ],
   },
   {
+    id: "adesivos-e-rotulos",
     title: "Adesivos e Rótulos",
     text: "O rótulo identifica, informa e vende ao mesmo tempo — e precisa fazer isso enquanto aguenta manuseio, geladeira, umidade e tempo de prateleira. Cor fora do tom ou adesivo descolando não é detalhe técnico: é a percepção que o cliente tem do seu produto. Por isso a impressão aqui é flexográfica, com até 8 cores UV.",
     examples:
@@ -46,6 +50,7 @@ const CATEGORIAS: Categoria[] = [
     ],
   },
   {
+    id: "comunicacao-visual",
     title: "Comunicação Visual",
     text: "É o que faz a sua marca ser vista de longe — na fachada, no evento, na feira, no ponto de venda. Formato grande não pode significar acabamento pequeno: material errado desbota, amassa e envelhece rápido, e aí a peça que deveria atrair passa a depor contra. A gente indica o material certo para onde a peça vai ficar e por quanto tempo.",
     examples:
@@ -94,7 +99,8 @@ export default function ServicosCategorias() {
           {CATEGORIAS.map((categoria) => (
             <article
               key={categoria.title}
-              className="bg-off-white-morno"
+              id={categoria.id}
+              className="bg-off-white-morno scroll-mt-28"
               style={{
                 padding:
                   "clamp(20px,3vw,28px) clamp(20px,3vw,32px) clamp(22px,3vw,32px)",

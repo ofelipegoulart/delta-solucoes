@@ -18,7 +18,7 @@ export default function ServicosFinalCta() {
           solta. A gente indica o material, o acabamento e o caminho.
         </h2>
         <Link
-          href="/contato"
+          href="/contato?modo=orcamento"
           className="inline-flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-6 py-3 bg-branco text-laranja-profundo transition-colors hover:bg-marinho hover:text-white"
         >
           Solicitar Orçamento

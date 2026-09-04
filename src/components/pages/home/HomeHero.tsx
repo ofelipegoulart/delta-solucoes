@@ -25,7 +25,7 @@ export default function HomeHero() {
 
             <div className="flex flex-row gap-3">
               <Link
-                href="/contato"
+                href="/contato?modo=orcamento"
                 className="flex-1 flex items-center justify-center text-center text-base sm:text-lg font-medium rounded px-3 sm:px-5 py-3 bg-marinho text-white transition-colors hover:bg-white hover:text-marinho"
               >
                 Solicitar Orçamento

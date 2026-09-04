@@ -27,7 +27,7 @@ export default function ClientesFinalCta() {
             Quer ser o próximo case da lista?
           </h2>
           <Link
-            href="/contato"
+            href="/contato?modo=orcamento"
             className="inline-flex items-center justify-center text-center font-bold rounded-[3px] bg-laranja text-white transition-colors hover:bg-branco hover:text-marinho"
             style={{ padding: "16px 30px", fontSize: 15 }}
           >

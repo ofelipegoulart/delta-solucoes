@@ -8,7 +8,7 @@ import HomeFinalCta from "./HomeFinalCta";
 export default function HomePage() {
   return (
     <>
-      <Header current="home" showLogoOnMobile={false} />
+      <Header current="home" />
 
       <main>
         <HomeHero />

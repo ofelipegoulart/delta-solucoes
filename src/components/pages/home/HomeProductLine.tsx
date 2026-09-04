@@ -1,9 +1,11 @@
+import Link from "next/link";
 import ZoomImage from "@/components/ui/ZoomImage";
 
 type Product = {
   title: string;
   items: string[];
   cta: string;
+  href: string;
   image?: string;
   coverImage?: boolean;
 };
@@ -18,6 +20,7 @@ const PRODUCTS: Product[] = [
       "Todo tipo de produto que precisa de proteção",
     ],
     cta: "Ver Soluções em Embalagens",
+    href: "/servicos#embalagens",
     image: "/images/products/hamburguer-legumes-600-x-600.webp",
   },
   {
@@ -28,17 +31,19 @@ const PRODUCTS: Product[] = [
       "Tags, wobblers, móbiles e materiais para ponto de venda",
     ],
     cta: "Ver Promocionais",
+    href: "/servicos#promocionais",
     image: "/images/products/promocionais.png",
     coverImage: true,
   },
   {
-    title: "Rótulos e Etiquetas",
+    title: "Rótulos e Adesivos",
     items: [
       "Impressão flexográfica até 8 cores UV",
       "Rótulos e tags",
       "Etiquetas em tubetes ou cartelas",
     ],
-    cta: "Ver Rótulos e Etiquetas",
+    cta: "Ver Rótulos e Adesivos",
+    href: "/servicos#adesivos-e-rotulos",
     image: "/images/products/valvoline-e700-15w40.webp",
   },
 ];
@@ -83,9 +88,12 @@ export default function HomeProductLine() {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-                <div className="text-sm sm:text-base font-medium border-2 border-laranja-profundo text-laranja-profundo px-3 py-2 text-center w-full mt-auto transition-colors hover:bg-laranja hover:text-white hover:border-laranja">
+                <Link
+                  href={product.href}
+                  className="text-sm sm:text-base font-medium border-2 border-laranja-profundo text-laranja-profundo px-3 py-2 text-center w-full mt-auto transition-colors hover:bg-laranja hover:text-white hover:border-laranja"
+                >
                   {product.cta}
-                </div>
+                </Link>
               </div>
             </div>
           ))}

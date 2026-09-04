@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Droplet, Pill, ShoppingBag, UtensilsCrossed } from "lucide-react";
+import { Droplet, Pill, ShoppingBag, Utensils } from "lucide-react";
 import { SEGMENTOS } from "./clientes-content";
 
 const SEGMENTO_ICONS: Record<string, typeof Droplet> = {
-  Alimentos: UtensilsCrossed,
+  Alimentos: Utensils,
   Cosméticos: Droplet,
   Farmacêutico: Pill,
   Varejo: ShoppingBag,

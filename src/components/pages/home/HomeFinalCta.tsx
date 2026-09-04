@@ -27,7 +27,7 @@ export default function HomeFinalCta() {
           </p>
           <Button
             label="Solicitar Orçamento"
-            href="/contato"
+            href="/contato?modo=orcamento"
             variant="primary"
             className="inline-flex flex-none px-6"
           />
