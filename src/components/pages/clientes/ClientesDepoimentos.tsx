@@ -55,8 +55,8 @@ export default function ClientesDepoimentos() {
                 <Image
                   src={depoimento.logo}
                   alt={`Logo da ${depoimento.empresa}`}
-                  width={118}
-                  height={34}
+                  width={220}
+                  height={70}
                   className="h-8.5 w-auto object-contain"
                 />
               ) : (

@@ -54,10 +54,10 @@ export default function HomeHero() {
                 }}
               />
               <Image
-                src="/images/products/sacola-visionari.png"
+                src="/images/products/sacola-personalizada.png"
                 alt="Sacola promocional personalizada Visionari, produzida pela Delta Soluções"
-                width={1179}
-                height={1471}
+                width={960}
+                height={1280}
                 priority
                 className="relative z-10 w-auto h-auto max-w-[210px] sm:max-w-[270px] md:max-w-none"
                 style={{

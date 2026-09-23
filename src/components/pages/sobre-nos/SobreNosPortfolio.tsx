@@ -5,7 +5,8 @@ const CASES = [
   {
     titulo: "Sacolas personalizadas",
     fotoLabel: "Foto: sacola personalizada — pendente",
-    foto: undefined,
+    foto: "/images/products/sacola-personalizada-portfolio.png",
+    fotoComSombra: false,
     texto:
       "Sabe aquela sensação de receber um presente especial? É isso que uma sacola bem resolvida entrega ao seu cliente. Além de proteger o produto, ela agrega valor e mostra que cada detalhe foi pensado com atenção.",
   },
@@ -13,6 +14,7 @@ const CASES = [
     titulo: "Caixas com visor em acetato",
     fotoLabel: "Foto: caixa com visor em acetato — pendente",
     foto: "/images/products/caixa-acetato.png",
+    fotoComSombra: true,
     texto:
       "O visor deixa o conteúdo à mostra sem que ninguém precise abrir a caixa. Funciona para brinde de festa, casamento, confraternização, doces. Em kraft 150g, e ainda dá para complementar com uma faixa exclusiva ou adesivo da sua marca.",
   },
@@ -55,10 +57,14 @@ export default function SobreNosPortfolio() {
                     fill
                     className="object-contain p-4"
                     sizes="(min-width: 860px) 50vw, 100vw"
-                    style={{
-                      filter:
-                        "drop-shadow(0 3px 4px rgba(20,9,3,.28)) drop-shadow(0 10px 10px rgba(20,9,3,.18)) drop-shadow(0 18px 16px rgba(20,9,3,.12))",
-                    }}
+                    style={
+                      item.fotoComSombra
+                        ? {
+                            filter:
+                              "drop-shadow(0 3px 4px rgba(20,9,3,.28)) drop-shadow(0 10px 10px rgba(20,9,3,.18)) drop-shadow(0 18px 16px rgba(20,9,3,.12))",
+                          }
+                        : undefined
+                    }
                   />
                 </div>
               ) : (

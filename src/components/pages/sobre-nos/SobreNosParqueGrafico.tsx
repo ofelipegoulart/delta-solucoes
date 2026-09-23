@@ -1,4 +1,4 @@
-import FotoPendente from "./FotoPendente";
+import Image from "next/image";
 
 const TECNOLOGIAS = ["Offset", "Digital", "Flexográfica (até 8 cores UV)", "Silk screen"];
 const SUBSTRATOS = ["Couchê", "Duplex", "Triplex", "Monolúcido", "Kraft"];
@@ -78,16 +78,30 @@ export default function SobreNosParqueGrafico() {
           </div>
 
           <div className="sobre-parque-fotos-grid">
-            <FotoPendente
-              label="Máquina em operação — pendente"
-              height="clamp(180px, 22vw, 240px)"
-              tone="branco"
-            />
-            <FotoPendente
-              label="Equipe em ação — pendente"
-              height="clamp(180px, 22vw, 240px)"
-              tone="branco"
-            />
+            <div
+              className="relative overflow-hidden rounded-sm"
+              style={{ height: "clamp(180px, 22vw, 240px)" }}
+            >
+              <Image
+                src="/images/sobre-nos/maquina-offset-bobina.jpg"
+                alt="Máquina de impressão offset em operação, com bobina de papel passando pelos rolos"
+                fill
+                className="object-cover"
+                sizes="(min-width: 860px) 50vw, 100vw"
+              />
+            </div>
+            <div
+              className="relative overflow-hidden rounded-sm"
+              style={{ height: "clamp(180px, 22vw, 240px)" }}
+            >
+              <Image
+                src="/images/sobre-nos/maquina-offset-detalhe.jpg"
+                alt="Detalhe dos mecanismos de registro de uma máquina de impressão offset"
+                fill
+                className="object-cover"
+                sizes="(min-width: 860px) 50vw, 100vw"
+              />
+            </div>
           </div>
         </div>
       </div>

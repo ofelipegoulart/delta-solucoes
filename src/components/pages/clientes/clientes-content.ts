@@ -25,10 +25,11 @@ export type Depoimento = {
 export const DEPOIMENTOS: Depoimento[] = [
   {
     citacao:
-      "[ trecho real do depoimento — aguardando texto e material de referência do cliente ]",
-    nome: "Nome do contato",
-    cargo: "Cargo",
-    empresa: "Empresa A",
+      "Grupo Maxi me atende há pelo menos 10 anos com agilidade, qualidade e competência. Fácil comunicação e solução de problemas. Já faz algum tempo que não mexemos mais com cotação em outras gráficas, graças à confiança e ao profissionalismo.",
+    nome: "Vítor",
+    cargo: "Responsável",
+    empresa: "De Tommaso",
+    logo: "/images/logos/clientes/de-tomasso.avif",
   },
   {
     citacao:

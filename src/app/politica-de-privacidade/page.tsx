@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Política de Privacidade | Delta Soluções",
   description:
     "Política de Privacidade do site da Delta Soluções em Impressão, conforme a LGPD.",
+  alternates: {
+    canonical: "/politica-de-privacidade",
+  },
 };
 
 export default function Page() {
