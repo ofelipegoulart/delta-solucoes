@@ -40,30 +40,28 @@ export default function HomeHero() {
           </div>
 
           <div className="md:self-end flex justify-center pt-8 pb-16 md:pt-0 md:pb-0">
-            <div className="relative -translate-x-4 sm:translate-x-0">
+            <div className="flex items-end gap-2 sm:translate-x-12 md:translate-x-16 -translate-y-16 sm:-translate-y-8">
               <Image
-                src="/images/products/caixa-acetato.png"
-                alt="Caixa de acetato personalizada, produzida pela Delta Soluções"
-                width={640}
-                height={852}
-                className="absolute z-0 top-1/2 -translate-y-1/2 right-[-46px] sm:right-[-65px] md:right-[-102px] w-auto h-auto max-w-[200px] sm:max-w-[250px] md:max-w-[330px]"
+                src="/images/products/sacola-personalizada.png"
+                alt="Sacola promocional personalizada, produzida pela Delta Soluções"
+                width={902}
+                height={1095}
+                priority
+                className="relative z-10 w-auto h-auto max-w-[210px] sm:max-w-[305px] md:max-w-[360px]"
                 style={{
-                  maxHeight: 450,
                   filter:
-                    "drop-shadow(0 4px 5px rgba(20,9,3,.5)) drop-shadow(0 14px 14px rgba(20,9,3,.35)) drop-shadow(0 26px 22px rgba(20,9,3,.25))",
+                    "drop-shadow(0 5px 6px rgba(20,9,3,.55)) drop-shadow(0 18px 18px rgba(20,9,3,.38)) drop-shadow(0 34px 30px rgba(20,9,3,.28))",
                 }}
               />
               <Image
-                src="/images/products/sacola-personalizada-portfolio.png"
-                alt="Sacola promocional personalizada Visionari, produzida pela Delta Soluções"
-                width={960}
-                height={1280}
-                priority
-                className="relative z-10 w-auto h-auto max-w-[210px] sm:max-w-[270px] md:max-w-none"
+                src="/images/products/caixa-acetato-hero.png"
+                alt="Caixa de acetato personalizada, produzida pela Delta Soluções"
+                width={584}
+                height={471}
+                className="relative z-10 w-auto h-auto max-w-[130px] sm:max-w-[190px] md:max-w-[240px] -ml-16 sm:-ml-18 md:-ml-22"
                 style={{
-                  maxHeight: 520,
                   filter:
-                    "drop-shadow(0 5px 6px rgba(20,9,3,.55)) drop-shadow(0 18px 18px rgba(20,9,3,.38)) drop-shadow(0 34px 30px rgba(20,9,3,.28))",
+                    "drop-shadow(0 4px 5px rgba(20,9,3,.5)) drop-shadow(0 14px 14px rgba(20,9,3,.35)) drop-shadow(0 26px 22px rgba(20,9,3,.25))",
                 }}
               />
             </div>
